@@ -1,0 +1,124 @@
+.contact-page {
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 55%;
+    max-height: 90%;
+
+    h1 {
+      color: #ccd6f6;
+      font-size: 53px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+      letter-spacing: 2px;
+
+      .sub-h1 {
+        color: #8892b0;
+      }
+
+      &::before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore';
+        color: #ffd400;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -40px;
+        left: -15px;
+        opacity: 0.6;
+      }
+
+      &::after {
+        content: '</h1>';
+        font-family: 'La Belle Aurore';
+        color: #ffd400;
+        font-size: 18px;
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 20px;
+        opacity: 0.6;
+        animation: fadeIn 1s 1.7s backwards;
+      }
+    }
+
+    p {
+      font-size: 150%;
+      color: #8892b0;
+      font-family: sans-serif;
+      font-weight: 300;
+      min-width: fit-content;
+    }
+  }
+  .contact-form {
+    width: 100%;
+    margin-top: 20px;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 10px;
+        overflow: hidden;
+        display: block;
+        position: relative;
+        opacity: 0;
+        animation: fadeInUp 2s 2s;
+        animation-fill-mode: forwards;
+        clear: both;
+      }
+
+      li.half{
+        width: 49%;
+        margin-left: 2%;
+        float: left;
+        clear: none;
+
+        &:first-child{
+            margin-left: 0;
+        }
+      }
+    }
+
+    input[type='text'],
+    input[type='email']{
+        width: 100%;
+        border: 0;
+        background-color: #115173;
+        height: 50px;
+        font-size: 16px;
+        color: #fff;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    textarea{
+        width: 100%;
+        border: 0;
+        background-color: #115173;
+        height: 50px;
+        font-size: 16px;
+        color: #fff;
+        padding:20px;
+        min-height: 150px;
+        box-sizing: border-box;
+    }
+
+    .flat-button{
+        color: #ffd400;
+        background: 0 0;
+        font : 11px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding:  8px 10px;
+        border: 1px solid #ffd400;
+        margin-top: 25px;
+        float: right;
+        border-radius: 4px;
+    }
+  }
+}

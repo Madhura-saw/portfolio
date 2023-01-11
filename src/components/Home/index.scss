@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+.home-page{
+
+    .text-zone{
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50%;
+        max-height: 90%;
+    }
+
+    h1{
+        color: #ccd6f6;
+        font-size: 5em;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+        letter-spacing: 2px;
+
+        .sub-h1{
+            color: #8892b0;
+        }
+
+        &::before{
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            color: #ffd400;
+            font-size: 18px;
+            position: absolute;
+            margin-top: -40px;
+            left: -15px;
+            opacity: 0.6;
+        }
+
+        &::after{
+            content: '</h1>';
+            font-family: 'La Belle Aurore';
+            color: #ffd400;
+            font-size: 18px;
+            position: absolute;
+            margin-top: 18px;
+            margin-left: 20px;
+            opacity: 0.6;
+            animation: fadeIn 1s 1.7s backwards;
+        }
+
+        img{
+            width: 32px;
+            margin-left: 20px;
+            opacity: 0;
+            height: auto;
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.4s;
+        }
+    }
+
+    h2{
+        color: #8d8d8d;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 1.5em;
+        font-family: 'Space Mono', monospace;
+        letter-spacing: 0.1em;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+
+    .flat-button{
+        color: #ffd400;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid #ffd400;
+        margin-top: 25px;
+        float: left;
+        animation: fadeIn 1s 1.8s backwards;
+        white-space: nowrap;
+
+        &:hover{
+            background-color: #ffd400;
+            color: #333;
+        }
+
+    }
+}

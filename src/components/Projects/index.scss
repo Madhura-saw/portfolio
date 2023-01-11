@@ -1,0 +1,79 @@
+.project-page {
+  left: 2%;
+  overflow: scroll;
+
+  h1 {
+    text-align: center;
+    font-family: 'Coolvetica';
+    color: #ccd6f6;
+    font-size: 3.3rem;
+    letter-spacing: 3px;
+    margin-bottom: 0.8rem;
+  }
+
+  p{
+    text-align: center;
+    font-family: 'Coolvetica';
+    color: #f7eba5;
+    font-size: 2rem;
+    letter-spacing: 3px;
+
+    & a{
+      text-decoration: none;
+      color: #f7eba5;
+    }
+  }
+
+
+  .portfolio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+  
+    &_column {
+      flex-basis: 30%;
+      margin: 0.5rem;
+  
+    }
+  
+    &_image {
+      width: 100%;
+      margin-top: 0.5rem;
+      overflow: hidden;
+      position: relative;
+  
+      & img {
+        width: 100%;
+        height: auto;
+        transition: all 0.4s;
+        
+
+        &:hover{
+          transform: scale(1.2);
+        }
+      }
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.8); 
+        color: #f1f1f1;
+        width: 100%;
+        transition: .5s ease;
+        opacity:0;
+        color: white;
+        font-size:23px;
+        padding: 20px;
+        text-align: center;
+        font-family: sans-serif;
+      }
+      
+      &:hover .overlay {
+        opacity: 1;
+      }
+    }
+    
+  }
+}
